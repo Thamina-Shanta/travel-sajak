@@ -4,8 +4,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- -------Daisy link------- -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+      <!-- ----------Google font------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<!-- -----custom Tailwind------- -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            
+          }
+        }
+      }
+    }
+  </script>
+        <style>
+       .font-poppins{
+            font-family: "Poppins", serif; 
+       }
+       .bttn{
+        background-color: #E76F51;
+       }
+        </style>
 </head>
 <body>
-    <h1>Travel to sajak</h1>
+  
+    <header>
+       <nav class="container max-w-6xl max-auto bg-red-200 mx-auto">
+        <div class="navbar bg-Red-200">
+            <div class="navbar-start flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                 <li>Home</li>
+                 <li>Shop</li>
+                 <li>News</li>
+                 <li>Contact</li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl font-bold font-poppins">Bike Dhako</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal gap-5 px-1">
+                <li>Home</li>
+                <li>Shop</li>
+                <li>News</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="">
+              <a class="btn bg-btn px-12 py-3">Log-in</a>
+            </div>
+          </div>
+       </nav>
+    </header>
+    <main class="max-w-6xl mx-auto">
+       <!-- ------Fetured Bike in this year------- -->
+        <div class="bg-white mt-10 ">
+          <div class="text-4xl font-Poopins text-center">
+            <h1 class="font-poppins">Fetured Bikes In This Year</h1>
+          </div>
+            <div class="flex justify-evenly mt-5 gap-8">
+              <div>
+                <img src="./images/feature-bike.png" alt="">
+              </div>
+              
+              <div>
+                <img src="./images/feature-bike.png" alt="">
+              </div>
+              <div>
+                <img src="./images/feature-bike.png" alt="">
+              </div>
+                
+              </div>
+             
+            </div>
+        </div>
+      <!-- -----latest news------ -->
+      <div class="text-4xl mx-auto text-center mt-20 ">
+        <h1 class="font-poppins">Latest News</h1>
+      </div>
+       <div class="flex mt-10 gap-5">
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./images/latest1.png" alt="">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Ducatl XDIAVEL S-73</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, consequuntur?</p>
+            <div class="card-actions justify-start">
+              <button class="btn bg-yellow-700">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./images/latest2.png" alt=""> 
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Motorcycles & Scooters</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, quasi!</p>
+            <div class="card-actions justify-start">
+              <button class="btn bg-yellow-700">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./images/latest3.png" alt=""> 
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">2021 Honda CBR500R</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, esse.</p>
+            <div class="card-actions justify-start">
+              <button class="btn bg-yellow-700 ">Read More</button>
+            </div>
+          </div>
+        </div>
+       </div>
+        <!-- ------Happy clients says----- -->
+         <div class="mt-20">
+          <h1 class="text-4xl text-center">Happy <span class="text-orange-700">Clients Sayes</span></h1>
+         </div>
+         <div class="flex mt-20 gap-8">
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img class="rounded" src="./images/user-1 (1).png" alt="">
+            </figure>
+            <div class="card-body">
+              <p>Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+                <h2 class="text-blue-500">Regina Mails</h2>
+                <h3>Banker</h3>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img src="./images/user-2 (1).png" alt="">
+            </figure>
+            <div class="card-body">
+              <p>Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+                <h2 class="text-blue-500">Regina Mails</h2>
+                <h3>Banker</h3>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+             <img src="./images/user-3 (1).png" alt="">
+            </figure>
+            <div class="card-body">
+              <p>Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+                <h2 class="text-blue-500">Regina Mails</h2>
+                <h3>Banker</h3>
+            </div>
+          </div>
+         </div>
+        <!-- ------FreQuently asked Question-------- -->
+         <div class="flex mt-10">
+          <div class="w-1/2">
+          <img src="./images/faq.png" alt="">
+        </div>
+          <div class="w-1/2">
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What are the most important things I should
+                know about riding a bike</div>
+              <div class="collapse-content">
+                <p></p>What are the most important things I should
+                know about riding a bike?
+                Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. 
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">How can I tell if my helmet is old and I need a 
+                new one?</div>
+              <div class="collapse-content">
+                <p>Yes</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">My bike has been in storage is it safe to ride?</div>
+              <div class="collapse-content">
+                <p>Yes</p>
+              </div>
+            </div>
+          </div>
+         </div>
+         </main>
+       <!-- ------Footer-------- -->
+       <footer class="footer bg-neutral text-neutral-content w-full mt-20 p-10">
+        <aside>
+          <p>
+            Download More
+            <br />
+            About <br>Features<br> Privecy<br>Help
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Get the App</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+            <img src="./ios.png" alt="">
+            </a>
+            <a>
+              <img src="./android.png" alt="">
+            </a>
+          </div>
+        </nav>
+      </footer>
 </body>
 </html>
